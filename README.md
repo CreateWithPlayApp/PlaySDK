@@ -17,9 +17,9 @@ To get started with Play SDK, check out the following resources:
 
 ## Supported devices
 
-Currently, this SDK supports a minimum iOS version of **17.4+**.
-The SDK is tested and developed using Xcode **16.2**.
-The package uses Swift Tools Version **5.8** and does not yet support Swift 6.
+- Currently, this SDK supports a minimum iOS version of **17.4+**.
+- The SDK is tested and developed using Xcode **16.2**.
+- The package uses Swift Tools Version **5.8** and does not yet support Swift 6.
 
 ## Build and Run
 
