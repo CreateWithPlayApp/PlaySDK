@@ -26,12 +26,11 @@ The package uses Swift Tools Version **5.8** and does not yet support Swift 6.
 ### Installing Xcode from the App Store
 
 If you’ve never built an app before, you may need to install Xcode from the App Store. This tutorial make it really easy to find the right version of Xcode and install it. 
-
-[https://www.youtube.com/watch?v=xkgaIm7QxK0&t=280s](https://www.youtube.com/watch?v=xkgaIm7QxK0&t=280s)
+[How to Make an App - Lesson 1 (Xcode 16 Updated)](https://www.youtube.com/watch?v=xkgaIm7QxK0&t=280s)
 
 Once you have Xcode installed, come back and open your project and hit run.
 
-![Screenshot 2025-03-11 at 3.35.50 PM.png](Julian%20-%20ReadMe%201b28b4370d868095a652c36d33d3f255/Screenshot_2025-03-11_at_3.35.50_PM.png)
+<img width="842" alt="Screenshot_2025-03-11_at_3 35 50_PM" src="https://github.com/user-attachments/assets/27fe7e3f-f040-4004-beaa-e3dec80e7d63" />
 
 ### Running your Xcode project for the first time
 
