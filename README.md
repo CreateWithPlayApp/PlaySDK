@@ -1,14 +1,6 @@
 # Play SDK
-
-<!-- ![Play hero image](https://cdn.createwithplay.com/play-logo.png) -->
-
-An iOS Library for [Play](https://createwithplay.com) that supports both UIKit and SwiftUI.
-
-The library is distributed through Swift Package Manager
-
 ## Play overview
-
-[Play](https://createwithplay.com) (TODO: add description of what Play SDK is )
+[Play](https://createwithplay.com/) is a visual platform for quickly designing interactive iOS apps and exporting production-ready Swift code in UIKit or SwiftUI. Now you can use Play to build, export, and ship your apps directly to the App Store.
 
 :house_with_garden: [Homepage](https://createwithplay.com/)
 
@@ -17,17 +9,46 @@ The library is distributed through Swift Package Manager
 🛠 [Play Forums](https://createwithplay.com/community/forums/home)
 
 ## Getting started
+The library is distributed through Swift Package Manager
 
 To get started with Play SDK, check out the following resources:
 
 - [Getting Started with Play SDK](https://createwithplay.com/playsdk/getting-started)
-
 
 ## Supported devices
 
 Currently, this SDK supports a minimum iOS version of **17.4+**.
 The SDK is tested and developed using Xcode **16.2**.
 The package uses Swift Tools Version **5.8** and does not yet support Swift 6.
+
+## Build and Run
+
+### Installing Xcode from the App Store
+
+If you’ve never built an app before, you may need to install Xcode from the App Store. This tutorial make it really easy to find the right version of Xcode and install it. 
+
+[https://www.youtube.com/watch?v=xkgaIm7QxK0&t=280s](https://www.youtube.com/watch?v=xkgaIm7QxK0&t=280s)
+
+Once you have Xcode installed, come back and open your project and hit run.
+
+![Screenshot 2025-03-11 at 3.35.50 PM.png](Julian%20-%20ReadMe%201b28b4370d868095a652c36d33d3f255/Screenshot_2025-03-11_at_3.35.50_PM.png)
+
+### Running your Xcode project for the first time
+
+When you export your project from Play, you'll receive an Xcode project file (with the **.xcodeproj** extension). To run your project for the first time, follow these steps:
+
+1. **Open the .xcodeproj:** Launch Xcode and open the exported `.xcodeproj` file or the existing project into which you imported Play.
+2. **Select a Target:** Choose the appropriate simulator or connected device from the device toolbar.
+3. **Build the Project:** Press `Command + B` or select **Product > Build** to compile the project and check for any errors.
+4. **Run the Project:** Press `Command + R` or select **Product > Run** to launch the app. The simulator or your device should display the app shortly.
+5. **Configure if Needed:** If running on a physical device, ensure your developer certificate is trusted and any required permissions are set in your project’s settings.
+
+### How do I import my Play project into my existing app?
+
+During the export process, Play gives you the option to add your project to an existing app. Simply hit **Publish**, then **Export**, and instead of creating a new project, select an existing Xcode project.
+
+Play will automatically add the necessary packages and entitlements to your existing project.
+
 ## Examples
 
 Check out the `Examples/` folder for an example application using PlaySDK.
