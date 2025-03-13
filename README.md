@@ -48,11 +48,58 @@ During the export process, Play gives you the option to add your project to an e
 
 Play will automatically add the necessary packages and entitlements to your existing project.
 
-## Examples
+#### Using a Play Component in your existing application
 
-Check out the `Examples/` folder for an example application using PlaySDK.
+##### SwiftUI
+You can instantiate a component in your existing application by importing your package. 
+```
+var body: some View {
+    VStack(spacing: 16) {
+        
+        // Add the component from Play SDK
+        Chip()
+        
+        // Set the Component's state (this component has 2 states: 'defaultState' & 'selected')
+            .state(currentState)
+        
+        // Do something when the state changes
+        // Tap the button to change its state
+            .onStateChange { state in
+                currentState = state
+                withAnimation() { isToggled.toggle() }
+            }
+    }
+}
+```
 
-TODO: potentially show code snippets here
+##### UIKit
+
+```
+override func viewDidLoad() {
+  super.viewDidLoad()
+  // Add the component from Play SDK
+  let myComponent = Chip()
+  myComponent.translatesAutoresizingMaskIntoConstraints = false
+  view.addSubview(myComponent)
+  
+  NSLayoutConstraint.activate([
+      myComponent.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      myComponent.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+  ])
+  
+  // Set the Component's state (this component has 2 states: 'defaultState' & 'selected')
+  myComponent.state(.selected)
+  
+  // Do something when the state changes
+  // Tap the button to change its state.
+  myComponent.onStateChange = { [weak self] animation in
+      self?.isToggled.toggle()
+      changeBackgroundColor()
+  }
+}
+```
+
+Check out the `Examples/` folder and the [PlaySDK Documentation](https://createwithplay.com/playsdk/) for more examples of how to work with the PlaySDK.
 
 ## Issues
 
