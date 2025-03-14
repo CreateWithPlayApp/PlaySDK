@@ -54,21 +54,21 @@ Play will automatically add the necessary packages and entitlements to your exis
 You can instantiate a component in your existing application by importing your package. 
 ```swift
 var body: some View {
-    VStack(spacing: 16) {
-        
-        // Add the component from Play SDK
-        Chip()
-        
-        // Set the Component's state (this component has 2 states: 'defaultState' & 'selected')
-            .state(currentState)
-        
-        // Do something when the state changes
-        // Tap the button to change its state
-            .onStateChange { state in
-                currentState = state
-                withAnimation() { isToggled.toggle() }
-            }
+  VStack(spacing: 16) {
+    
+    // Add the component from Play SDK
+    Chip()
+    
+    // Set the Component's state (this component has 2 states: 'defaultState' & 'selected')
+    .state(currentState)
+    
+    // Do something when the state changes
+    // Tap the button to change its state
+    .onStateChange { state in
+      currentState = state
+      withAnimation() { isToggled.toggle() }
     }
+  }
 }
 ```
 
@@ -83,9 +83,9 @@ override func viewDidLoad() {
   view.addSubview(myComponent)
   
   NSLayoutConstraint.activate([
-      myComponent.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      myComponent.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-  ])
+    myComponent.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+    myComponent.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+    ])
   
   // Set the Component's state (this component has 2 states: 'defaultState' & 'selected')
   myComponent.state(.selected)
@@ -93,8 +93,8 @@ override func viewDidLoad() {
   // Do something when the state changes
   // Tap the button to change its state.
   myComponent.onStateChange = { [weak self] animation in
-      self?.isToggled.toggle()
-      changeBackgroundColor()
+    self?.isToggled.toggle()
+    changeBackgroundColor()
   }
 }
 ```
