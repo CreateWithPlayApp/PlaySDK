@@ -23,7 +23,7 @@ With **Play + PlaySDK**, anyone can design and build apps inside the Play app, e
 
 To get started with PlaySDK, check out the following resources:
 
-- [Video - Learning PlaySDK](https://www.youtube.com/watch?v=JJ0kQthYDvU)
+- [Video - Learning PlaySDK](https://www.youtube.com/watch?v=bj3fj1Sk7cM&themeRefresh=1)
 - [Docs - Getting Started with PlaySDK](https://learn.createwithplay.com/en/articles/10751622-implementing-your-play-project-in-xcode)
 
 
