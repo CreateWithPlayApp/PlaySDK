@@ -21,8 +21,8 @@ let package = Package(
         ),
         .binaryTarget(
           name: "PlaySDKBinary",
-          url: "https://github.com/CreateWithPlayApp/PlaySDK/releases/download/v0.2.0-beta/_PlaySDK.xcframework.zip",
-          checksum: "bbae784a8d587aabe57395502aec52d98e45534bd0f2eba0a9b9cc21a41f3d1a"
+          url: "https://github.com/CreateWithPlayApp/PlaySDK/releases/download/v0.2.1-beta/_PlaySDK.xcframework.zip",
+          checksum: "4c3fed2c37c71d320eae4105a3aca39786228185ade47dab02bb7d418e2bd4cf"
         )
     ]
 )
