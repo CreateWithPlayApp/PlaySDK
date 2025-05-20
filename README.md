@@ -14,9 +14,9 @@ With **Play + PlaySDK**, anyone can design and build apps inside the Play app, e
 
 ## Requirements
 
-- Currently, this SDK supports a minimum iOS version of **17.4+**.
+- Currently, this SDK supports a minimum iOS version of **16.0+**.
 - The SDK is tested and developed using Xcode **16.2**.
-- The package uses Swift Tools Version **5.8** and does not yet support Swift 6.
+- The package uses Swift Tools Version **5.10** and does not yet support Swift 6.
 
 
 ## Getting started
